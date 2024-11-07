@@ -1,5 +1,5 @@
 /* место для вашего кода */
-.container {
+/* .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: repeat(5, 1fr);
@@ -34,4 +34,12 @@
 .header__logo {
   grid-column: 2/4;
   width: 150px;
+} */
+.header {
+  display: grid;
+  grid-template-columns: 1fr 150px 1fr;  
+}
+
+.header_ul__nav li {
+  display: inline;
 }
