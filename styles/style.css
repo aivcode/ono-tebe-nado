@@ -1,1 +1,37 @@
 /* место для вашего кода */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: repeat(5, 1fr);
+  grid-template-areas:
+  "header header header"
+  "cover cover cover"
+  "lots lots lots"
+  "about about about"
+  "foote footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.cover {
+  grid-area: cover;
+}
+
+.lots {
+  grid-area: lots;
+}
+
+.about {
+  grid-area: about;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.header__logo {
+  grid-column: 2/4;
+  width: 150px;
+}
