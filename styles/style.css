@@ -16,7 +16,12 @@
 }
 
 li:nth-child(1) {
-  list-style-type: none; 
+  list-style-type: none;
+}
+
+li:nth-child(n + 2) {
+  text-decoration: underline; 
+  text-underline-offset: 4px; 
 }
 
 .header__address {
