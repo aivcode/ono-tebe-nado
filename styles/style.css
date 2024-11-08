@@ -1,45 +1,29 @@
 /* место для вашего кода */
-/* .container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: repeat(5, 1fr);
-  grid-template-areas:
-  "header header header"
-  "cover cover cover"
-  "lots lots lots"
-  "about about about"
-  "foote footer footer";
-}
-
-.header {
-  grid-area: header;
-}
-
-.cover {
-  grid-area: cover;
-}
-
-.lots {
-  grid-area: lots;
-}
-
-.about {
-  grid-area: about;
-}
-
-.footer {
-  grid-area: footer;
-}
-
-.header__logo {
-  grid-column: 2/4;
-  width: 150px;
-} */
 .header {
   display: grid;
-  grid-template-columns: 1fr 150px 1fr;  
+  grid-template-columns: 1fr 135px 1fr;
+  margin: 92px 24px;
+  font-size: 18px;
 }
 
-.header_ul__nav li {
-  display: inline;
+.header__navigation {
+  display: flex;
+  list-style: circle;
+  gap: 30px;
+  position: relative;
+  top: 43px;
+  left: 26px;
+}
+
+li:nth-child(1) {
+  list-style-type: none; 
+}
+
+.header__address {
+  position: relative;
+  right: -192px;
+  top: 5px;
+  font-style: normal;
+  line-height: 25px;
+  text-underline-offset: 3px;
 }
