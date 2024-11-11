@@ -73,3 +73,31 @@
 .cover__title .letter-spacing-extended {
   letter-spacing: 60px;
 }
+
+.cover__description {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  bottom: 89px;
+  color: white;
+  z-index: 2;
+  font-size: 22px;
+}
+
+.cover__description .cover__description-text {
+  word-spacing: 19px;
+  margin-left: 35px;
+  margin-right: 0;
+  color: white;
+}
+
+.cover__description .bet-button {
+  position: relative;
+  right: 9px;
+  bottom: 13px;
+  background: transparent;
+  border: 1px solid white;
+  font-size: 22px;
+  color: white;
+  padding: 12px 32px 11px 31px;
+}
