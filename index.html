@@ -20,7 +20,11 @@
         <li>посмотреть лоты</li>
         <li>об аукционе</li>
       </ul>
-      <img class="header_logo" src="images/logo-black.svg" alt="">
+
+      <a class="header__logo">
+        <img class="header__logo-image" src="images/logo-black.svg" alt="Logo">
+      </a>
+       
       <address class="header__address">
         <a href="tel:+99995555555">+9 999 555 5555</a><br>
         <a href="mailto:info@esobaka.ge">info@esobaka.ge</a><br>
@@ -29,11 +33,25 @@
       </address>
     </header>
     
-    <main>
-      <section class="cover"></section>
-      <section class="lots"></section>
-      <section class="about"></section>
-    </main>
+    <section class="cover">
+      <div class="cover__color-overlay"></div>
+      <h1 class="cover__title">
+        О<span class="letter-spacing-extended">НО</span><br>
+
+        <span class="aligned-text_center">
+          ТЕ<span class="letter-spacing-extended">БЕ</span><br>
+        </span>
+
+        <span class="aligned-text_right">
+          <span class="letter-spacing-extended">Н</span>АДО
+        </span>  
+
+      </h1>
+    </section>
+
+    <section class="lots"></section>
+
+    <section class="about"></section>
 
     <footer class="footer"></footer>
 
