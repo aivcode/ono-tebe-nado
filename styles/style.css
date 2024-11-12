@@ -183,6 +183,7 @@ article .cover__color-overlay {
   grid-template-columns: 1fr 2fr;
   gap: 30px;
   height: 595px;
+  margin-bottom: 340px;
 }
 
 .about__logo-image {
@@ -207,4 +208,28 @@ article .cover__color-overlay {
 
 .about__text p {
   margin-bottom: 28px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer__menu {
+  margin: auto;
+}
+
+.footer__menu-list {
+  list-style-type: none;
+}
+
+.footer__social-list {
+  display: flex;
+  list-style-type: none;
+  gap: 50px;
+}
+
+.footer__social-icon {
+  height: 48px;
+  width: 48px;
 }
