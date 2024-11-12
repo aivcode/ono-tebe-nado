@@ -102,14 +102,53 @@
   padding: 12px 32px 11px 31px;
 }
 
+.lots {
+  margin-top: 180px;
+}
+
 .lots__heading {
   font-size: 40px;
+  margin-left: 65px;
 }
 
 .lots__card-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
+  margin: 29px 25px;
+}
+
+.lots__card-list-item {
+  list-style-type: none;
+  color: white;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+article .cover__color-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.card__title {
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  margin-top: 48px;
+  margin-left: 40px;
+}
+
+.card__text {
+  font-size: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 55px;
 }
 
 .card_type_film {
@@ -131,4 +170,9 @@
   background-size: cover;
   background-position: center;
   height: 563px;
+}
+
+.lots__look-more-link {
+  font-size: 20px;
+  margin-left: 65px;
 }
