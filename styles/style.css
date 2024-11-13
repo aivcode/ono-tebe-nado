@@ -191,12 +191,15 @@ article .cover__color-overlay {
 .about__logo-image {
   width: 240px;
   height: 240px;
-  margin-top: 181px;
-  margin-left: 74px;
+  position: relative;
+  top: 183px;
+  left: 49px;
 }
 
 .about__reading {
   margin-top: 285px;
+  margin-left: -9px;
+  margin-right: 10px;
 }
 
 .about__title {
@@ -215,7 +218,7 @@ article .cover__color-overlay {
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-bottom: 80px;
+  margin-bottom: 70px;
 }
 
 .footer__address {
