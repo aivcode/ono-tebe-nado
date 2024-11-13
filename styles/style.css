@@ -1,4 +1,3 @@
-/* место для вашего кода */
 .header {
   display: grid;
   grid-template-columns: 1fr 135px 1fr;
@@ -185,21 +184,23 @@ article .cover__color-overlay {
   margin-left: 24px;
   margin-right: 24px;
   height: 595px;
-  margin-bottom: 340px;
+  margin-top: 172px;
+  margin-bottom: 168px;
 }
 
 .about__logo-image {
   width: 240px;
   height: 240px;
   position: relative;
-  top: 183px;
-  left: 49px;
+  top: 10px;
+  left: 50px;
 }
 
 .about__reading {
-  margin-top: 285px;
-  margin-left: -9px;
-  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-left: -8px;
 }
 
 .about__title {
