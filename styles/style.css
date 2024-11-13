@@ -215,18 +215,40 @@ article .cover__color-overlay {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.footer__address {
+  position: relative;
+  left: 54px;
+  top: -12px;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-underline-offset: 3px;
+}
+
 .footer__menu {
-  margin: auto;
+  position: relative;
+  left: 4px;
+  top: -12px;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .footer__menu-list {
   list-style-type: none;
+  text-align: center;
+}
+
+.footer__menu-list li:nth-child(1) a {
+  text-decoration: none;
 }
 
 .footer__social-list {
   display: flex;
-  list-style-type: none;
+  justify-content: end;
+  margin-right: 46px;
+  margin-top: -12px;
   gap: 50px;
+  list-style-type: none;
 }
 
 .footer__social-icon {
