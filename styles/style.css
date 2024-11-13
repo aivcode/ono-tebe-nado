@@ -24,12 +24,19 @@
 }
 
 .header__address {
-  position: relative;
-  right: -192px;
-  top: 4px;
   font-style: normal;
   line-height: 25px;
   text-underline-offset: 3px;
+} 
+
+.header__address a {
+  position: relative;
+  left: 192px;
+  top: 4px
+}
+
+.header__address a.no-decoration {
+  text-decoration: none;
 }
 
 .cover__color-overlay {
