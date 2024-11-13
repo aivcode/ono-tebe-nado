@@ -213,6 +213,7 @@ article .cover__color-overlay {
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 88px;
 }
 
 .footer__address {
