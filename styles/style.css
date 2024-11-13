@@ -182,6 +182,8 @@ article .cover__color-overlay {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 30px;
+  margin-left: 24px;
+  margin-right: 24px;
   height: 595px;
   margin-bottom: 340px;
 }
@@ -213,7 +215,7 @@ article .cover__color-overlay {
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-bottom: 88px;
+  margin-bottom: 80px;
 }
 
 .footer__address {
