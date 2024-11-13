@@ -20,8 +20,8 @@
 }
 
 .header__navigation li:nth-child(n + 2) {
-  text-decoration: underline; 
-  text-underline-offset: 4px; 
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .header__address {
@@ -42,7 +42,7 @@
 
 .cover {
   position: relative;
-  background-image: url(/images/cover.jpg);
+  background-image: url('../images/cover.jpg');
   background-size: cover;
   background-position: center;
   height: 757px;
@@ -152,21 +152,21 @@ article .cover__color-overlay {
 }
 
 .card_type_film {
-  background-image: url(/images/card-lot-01.jpg);
+  background-image: url('../images/card-lot-01.jpg');
   background-size: cover;
   background-position: center;
   height: 563px;
 }
 
 .card_type_book {
-  background-image: url(/images/card-lot-02.jpg);
+  background-image: url('../images/card-lot-02.jpg');
   background-size: cover;
   background-position: center;
   height: 563px;
 }
 
 .card_type_picture {
-  background-image: url(/images/card-lot-03.jpg);
+  background-image: url('../images/card-lot-03.jpg');
   background-size: cover;
   background-position: center;
   height: 563px;
