@@ -117,7 +117,32 @@ address {
   font-family: Raleway, sans-serif;
 }
 
-.lots {
+.lots__card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  list-style-type: none;
+  min-height: 563px;
+}
+
+.card-link {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  height: 100%;
+}
+
+.card {
+  color: white;
+}
+
+.card img {
+  position: absolute;
+  z-index: -2;
+}
+
+
+/* .lots {
   margin-top: 180px;
 }
 
@@ -143,7 +168,7 @@ address {
 .card-link {
   position: relative;
   text-decoration: none;
-}
+} */
 
 /* TODO: воспользоваться абсолютным позиционирование для размещения оверлея в блоке */
 /* .card_type_book {
@@ -155,7 +180,7 @@ address {
 
 сделать тайтлы по макету
 */
-.card__title {
+/* .card__title {
   font-size: 22px;
   text-transform: uppercase;
   text-decoration: underline;
@@ -206,7 +231,7 @@ address {
   font-size: 20px;
   margin-left: 65px;
   text-underline-offset: 4px;
-}
+} */
 
 .about {
   display: grid;
