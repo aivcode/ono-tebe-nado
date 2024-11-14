@@ -5,7 +5,7 @@
   font-size: 18px;
 }
 
-.header__navigation {
+.header__links-list{
   display: flex;
   list-style: circle;
   gap: 30px;
@@ -14,28 +14,28 @@
   left: 26px;
 }
 
-.header__navigation li:nth-child(1) {
+.header__links-list li:nth-child(1) {
   list-style-type: none;
 }
 
-.header__navigation li:nth-child(n + 2) {
+.header__links-list li:nth-child(n + 2) {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
 
-.header__address {
+address {
   font-style: normal;
   line-height: 25px;
   text-underline-offset: 3px;
 } 
 
-.header__address a {
+address a {
   position: relative;
   left: 192px;
   top: 4px
 }
 
-.header__address a.no-decoration {
+address a.no-decoration {
   text-decoration: none;
 }
 
@@ -63,6 +63,7 @@
   line-height: 128px;
   color: white;
   z-index: 2;
+  text-transform: uppercase;
 }
 
 .aligned-text_center {
@@ -88,6 +89,7 @@
   color: white;
   z-index: 2;
   font-size: 22px;
+  text-transform: uppercase;
 }
 
 .cover__description .cover__description-text {
@@ -106,6 +108,7 @@
   font-size: 22px;
   color: white;
   padding: 12px 32px 11px 31px;
+  text-transform: uppercase;
 }
 
 .lots {
@@ -115,6 +118,7 @@
 .lots__heading {
   font-size: 40px;
   margin-left: 65px;
+  text-transform: uppercase
 }
 
 .lots__card-list {
@@ -133,13 +137,24 @@
   text-decoration: none;
 }
 
-article .cover__color-overlay {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
+/* TODO: воспользоваться абсолютным позиционирование для размещения оверлея в блоке */
+/* .card_type_book {
+  position: relative;
 }
 
+.cover__color-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}  */
+
+
+/* 
+Не нужно использовать br для переноса строк внутри одного текстового элемента - для этого 
+обычно ограничивают максимальную ширину элемента и тогда он перенесется на новую строку сам.
+
+сделать тайтлы по макету
+*/
 .card__title {
   font-size: 22px;
   text-transform: uppercase;
@@ -213,6 +228,7 @@ article .cover__color-overlay {
 .about__title {
   font-size: 40px;
   margin-bottom: 100px;
+  text-transform: uppercase;
 }
 
 .about__text {
@@ -229,9 +245,10 @@ article .cover__color-overlay {
   margin-bottom: 70px;
 }
 
+/* нужно нормально спозиционировать блок. флекс?  */
 .footer__address {
   position: relative;
-  left: 54px;
+  left: -150px;
   top: -12px;
   font-style: normal;
   font-size: 18px;
