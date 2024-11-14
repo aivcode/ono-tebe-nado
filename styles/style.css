@@ -5,91 +5,97 @@
   font-size: 18px;
 }
 
-.header__links-list{
+.header__links-list {
   display: flex;
   list-style: circle;
   gap: 30px;
-  position: relative;
-  top: 43px;
-  left: 26px;
+  margin-top: 43px;
+  margin-left: 26px;
+  text-underline-offset: 4px;
+}
+
+.header__link {
+  text-decoration: underline;
+}
+
+.header__link.header__link_active {
+  text-decoration: none;
 }
 
 .header__links-list li:nth-child(1) {
   list-style-type: none;
 }
 
-.header__links-list li:nth-child(n + 2) {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
 address {
+  margin-left: 192px;
+  margin-top: 4px;
   font-style: normal;
   line-height: 25px;
+  max-width: 180px;
   text-underline-offset: 3px;
 } 
 
-address a {
-  position: relative;
-  left: 192px;
-  top: 4px
-}
-
-address a.no-decoration {
+.header__addressno-decoration {
   text-decoration: none;
+  display: block;
 }
 
-.cover__color-overlay {
-  background: rgba(0, 0, 0, 0.6);
-  height: 100%;
-  position: relative;
-  z-index: 1;
-}
 
 .cover {
   position: relative;
   background-image: url('../images/cover.jpg');
   background-size: cover;
   background-position: center;
-  height: 757px;
+  z-index: -2;
+  min-height: 757px;
+}
+
+.color-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* z-index: 3; */
+  z-index: -1;
 }
 
 .cover__title {
-  position: absolute;
-  top: 158px;
-  left: 50px;
+  padding: 159px 50px 50px 50px;
   font-size: 100px;
   letter-spacing: 30px;
   line-height: 128px;
   color: white;
-  z-index: 2;
+  z-index: 3;
   text-transform: uppercase;
 }
 
 .aligned-text_center {
-  position: relative;
-  left: 285px;
+  display: block;
+  text-align: center;
+  margin-left: -64px;
 }
 
 .aligned-text_right {
-  position: relative;
-  top: -7px;
-  left: 584px;
+  display: block;
+  text-align: right;
 }
 
-.cover__title .letter-spacing-extended {
+.letter-spacing-extended {
   letter-spacing: 60px;
+}
+
+.letter-spacing-reset {
+  letter-spacing: normal;
 }
 
 .cover__description {
   display: flex;
   justify-content: space-around;
-  position: relative;
-  bottom: 89px;
   color: white;
-  z-index: 2;
+  z-index: 3;
   font-size: 22px;
   text-transform: uppercase;
+  margin-top: 75px;
 }
 
 .cover__description .cover__description-text {
@@ -100,15 +106,15 @@ address a.no-decoration {
 }
 
 .cover__description .bet-button {
-  position: relative;
-  right: 9px;
-  bottom: 13px;
+  margin-right: 12px;
+  margin-top: -13px;
   background: transparent;
-  border: 1px solid white;
+  border: 1px solid currentColor;
   font-size: 22px;
   color: white;
   padding: 12px 32px 11px 31px;
   text-transform: uppercase;
+  font-family: Raleway, sans-serif;
 }
 
 .lots {
@@ -131,24 +137,18 @@ address a.no-decoration {
 .lots__card-list-item {
   list-style-type: none;
   color: white;
+  max-height: 563px;
 }
 
 .card-link {
+  position: relative;
   text-decoration: none;
 }
 
 /* TODO: воспользоваться абсолютным позиционирование для размещения оверлея в блоке */
 /* .card_type_book {
   position: relative;
-}
-
-.cover__color-overlay {
-  position: absolute;
-  top: 0;
-  width: 100%;
-}  */
-
-
+} */
 /* 
 Не нужно использовать br для переноса строк внутри одного текстового элемента - для этого 
 обычно ограничивают максимальную ширину элемента и тогда он перенесется на новую строку сам.
@@ -173,24 +173,33 @@ address a.no-decoration {
 }
 
 .card_type_film {
+  position: relative;
   background-image: url('../images/card-lot-01.jpg');
   background-size: cover;
   background-position: center;
-  height: 563px;
+  margin-top: -48px;
+  min-height: 563px;
+  z-index: -2;
 }
 
 .card_type_book {
+  position: relative;
   background-image: url('../images/card-lot-02.jpg');
   background-size: cover;
   background-position: center;
-  height: 563px;
+  margin-top: -48px;
+  min-height: 563px;
+  z-index: -2;
 }
 
 .card_type_picture {
+  position: relative;
   background-image: url('../images/card-lot-03.jpg');
   background-size: cover;
   background-position: center;
-  height: 563px;
+  margin-top: -48px;
+  min-height: 563px;
+  z-index: -2;
 }
 
 .lots__look-more-link {
