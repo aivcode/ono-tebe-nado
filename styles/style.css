@@ -55,7 +55,6 @@ address {
   position: absolute;
   width: 100%;
   height: 100%;
-  /* z-index: 3; */
   z-index: -1;
 }
 
@@ -65,7 +64,6 @@ address {
   letter-spacing: 30px;
   line-height: 128px;
   color: white;
-  z-index: 3;
   text-transform: uppercase;
 }
 
@@ -117,9 +115,21 @@ address {
   font-family: Raleway, sans-serif;
 }
 
+.lots {
+  margin-top: 228px;
+}
+
+.lots__heading {
+  font-size: 40px;
+  margin-left: 65px;
+  margin-bottom: 27px;
+  text-transform: uppercase
+}
+
 .lots__card-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin: 0 25px 0 25px;
   gap: 25px;
   list-style-type: none;
   min-height: 563px;
@@ -133,105 +143,57 @@ address {
 }
 
 .card {
+  height: 100%;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   color: white;
-}
-
-.card img {
-  position: absolute;
-  z-index: -2;
-}
-
-
-/* .lots {
-  margin-top: 180px;
-}
-
-.lots__heading {
-  font-size: 40px;
-  margin-left: 65px;
-  text-transform: uppercase
-}
-
-.lots__card-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  margin: 29px 25px;
-}
-
-.lots__card-list-item {
-  list-style-type: none;
-  color: white;
-  max-height: 563px;
-}
-
-.card-link {
+  background-size: cover;
+  background-position: center;
   position: relative;
-  text-decoration: none;
-} */
+  z-index: -1;
+}
 
-/* TODO: воспользоваться абсолютным позиционирование для размещения оверлея в блоке */
-/* .card_type_book {
-  position: relative;
-} */
-/* 
-Не нужно использовать br для переноса строк внутри одного текстового элемента - для этого 
-обычно ограничивают максимальную ширину элемента и тогда он перенесется на новую строку сам.
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+}
 
-сделать тайтлы по макету
-*/
-/* .card__title {
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.card__title {
   font-size: 22px;
   text-transform: uppercase;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
-  margin-top: 48px;
   margin-left: 40px;
+  margin-top: 50px;
+  max-width: 254px;
 }
 
 .card__text {
+  max-width: 254px;
   font-size: 20px;
   margin-left: 40px;
   margin-right: 40px;
-  margin-bottom: 55px;
-}
-
-.card_type_film {
-  position: relative;
-  background-image: url('../images/card-lot-01.jpg');
-  background-size: cover;
-  background-position: center;
-  margin-top: -48px;
-  min-height: 563px;
-  z-index: -2;
-}
-
-.card_type_book {
-  position: relative;
-  background-image: url('../images/card-lot-02.jpg');
-  background-size: cover;
-  background-position: center;
-  margin-top: -48px;
-  min-height: 563px;
-  z-index: -2;
-}
-
-.card_type_picture {
-  position: relative;
-  background-image: url('../images/card-lot-03.jpg');
-  background-size: cover;
-  background-position: center;
-  margin-top: -48px;
-  min-height: 563px;
-  z-index: -2;
+  margin-bottom: 53px;
 }
 
 .lots__look-more-link {
+  display: block;
   font-size: 20px;
+  margin-top: 29px;
   margin-left: 65px;
   text-underline-offset: 4px;
-} */
+  text-decoration-thickness: 1px;
+}
 
 .about {
   display: grid;
