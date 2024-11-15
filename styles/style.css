@@ -27,15 +27,19 @@
 }
 
 address {
-  margin-left: 192px;
   margin-top: 4px;
   font-style: normal;
   line-height: 25px;
-  max-width: 220px;
   text-underline-offset: 3px;
-} 
+  font-size: 18px;
+}
 
-.header__addressno-decoration {
+.header__address {
+  max-width: 220px;
+  margin-left: 195px;
+}
+
+.address-no-decoration {
   text-decoration: none;
   display: block;
 }
@@ -76,7 +80,7 @@ address {
 .aligned-text_right {
   display: block;
   text-align: right;
-  line-height: 105%;
+  line-height: 109%;
 }
 
 .letter-spacing-extended {
@@ -94,7 +98,7 @@ address {
   z-index: 3;
   font-size: 22px;
   text-transform: uppercase;
-  margin-top: 99px;
+  margin-top: 95px;
   margin-left: 5px;
 }
 
@@ -215,7 +219,7 @@ address {
   flex-direction: column;
   justify-content: end;
   margin-top: 238px;
-  max-width: 689px;
+  max-width: 690px;
 }
 
 .about__title {
@@ -235,24 +239,17 @@ address {
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin-top: 152px;
   margin-bottom: 70px;
 }
 
-/* нужно нормально спозиционировать блок. флекс?  */
 .footer__address {
-  position: relative;
-  left: -150px;
-  top: -12px;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 25px;
-  text-underline-offset: 3px;
+  margin-left: 51px;
+  max-width: 220px;
 }
 
 .footer__menu {
-  position: relative;
-  left: 4px;
-  top: -12px;
+  margin-top: 5px;
   font-size: 18px;
   line-height: 22px;
 }
@@ -269,8 +266,8 @@ address {
 .footer__social-list {
   display: flex;
   justify-content: end;
-  margin-right: 46px;
-  margin-top: -12px;
+  margin-right: 48px;
+  margin-top: 5px;
   gap: 50px;
   list-style-type: none;
 }
