@@ -31,7 +31,7 @@ address {
   margin-top: 4px;
   font-style: normal;
   line-height: 25px;
-  max-width: 180px;
+  max-width: 220px;
   text-underline-offset: 3px;
 } 
 
@@ -200,27 +200,22 @@ address {
 .about {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 30px;
-  margin-left: 24px;
-  margin-right: 24px;
-  height: 595px;
-  margin-top: 172px;
-  margin-bottom: 168px;
+  gap: 26px;
 }
 
 .about__logo-image {
   width: 240px;
   height: 240px;
-  position: relative;
-  top: 10px;
-  left: 50px;
+  margin-left: 70px;
+  margin-top: 135px;
 }
 
 .about__reading {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  margin-left: -8px;
+  margin-top: 238px;
+  max-width: 689px;
 }
 
 .about__title {
