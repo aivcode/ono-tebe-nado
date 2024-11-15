@@ -52,6 +52,7 @@ address {
   background-position: center;
   z-index: -2;
   min-height: 757px;
+  margin-bottom: 227px;
 }
 
 .color-overlay {
@@ -119,10 +120,6 @@ address {
   padding: 12px 32px 11px 31px;
   text-transform: uppercase;
   font-family: Raleway, sans-serif;
-}
-
-.lots {
-  margin-top: 228px;
 }
 
 .lots__heading {
