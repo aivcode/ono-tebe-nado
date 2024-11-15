@@ -76,6 +76,7 @@ address {
 .aligned-text_right {
   display: block;
   text-align: right;
+  line-height: 105%;
 }
 
 .letter-spacing-extended {
@@ -93,7 +94,8 @@ address {
   z-index: 3;
   font-size: 22px;
   text-transform: uppercase;
-  margin-top: 75px;
+  margin-top: 99px;
+  margin-left: 5px;
 }
 
 .cover__description .cover__description-text {
