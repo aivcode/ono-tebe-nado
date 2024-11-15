@@ -96,7 +96,6 @@ address {
   display: flex;
   justify-content: space-around;
   color: white;
-  z-index: 3;
   font-size: 22px;
   text-transform: uppercase;
   margin-top: 95px;
@@ -176,7 +175,7 @@ address {
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
   margin-left: 40px;
-  margin-top: 50px;
+  margin-top: 53px;
   max-width: 254px;
 }
 
@@ -185,13 +184,13 @@ address {
   font-size: 20px;
   margin-left: 40px;
   margin-right: 40px;
-  margin-bottom: 53px;
+  margin-bottom: 51px;
 }
 
 .lots__look-more-link {
   display: block;
   font-size: 20px;
-  margin-top: 29px;
+  margin-top: 32px;
   margin-left: 65px;
   text-underline-offset: 4px;
   text-decoration-thickness: 1px;
@@ -235,7 +234,7 @@ address {
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 152px;
+  margin-top: 150px;
   margin-bottom: 70px;
 }
 
@@ -253,6 +252,7 @@ address {
 .footer__menu-list {
   list-style-type: none;
   text-align: center;
+  text-underline-offset: 3px;
 }
 
 .footer__menu-list li:nth-child(1) a {
