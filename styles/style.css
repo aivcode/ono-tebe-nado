@@ -50,7 +50,6 @@ address {
   background-image: url('../images/cover.jpg');
   background-size: cover;
   background-position: center;
-  z-index: -2;
   min-height: 757px;
   margin-bottom: 226px;
 }
@@ -61,10 +60,11 @@ address {
   top: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
 }
 
 .cover__title {
+  position: relative;
+  z-index: 1;
   padding: 159px 50px 50px 50px;
   font-size: 100px;
   letter-spacing: 30px;
@@ -101,6 +101,8 @@ address {
   text-transform: uppercase;
   margin-top: 81px;
   margin-left: 5px;
+  position: relative;
+  z-index: 1;
 }
 
 .cover__description .cover__description-text {
@@ -152,8 +154,6 @@ address {
   color: white;
   background-size: cover;
   background-position: center;
-  position: relative;
-  z-index: -1;
 }
 
 .card_type_film {
@@ -177,6 +177,7 @@ address {
   margin-left: 40px;
   margin-top: 53px;
   max-width: 254px;
+  z-index: 1;
 }
 
 .card__text {
@@ -185,12 +186,13 @@ address {
   margin-left: 40px;
   margin-right: 40px;
   margin-bottom: 51px;
+  z-index: 1;
 }
 
 .lots__look-more-link {
   display: block;
   font-size: 20px;
-  margin-top: 32px;
+  margin-top: 35px;
   margin-left: 65px;
   text-underline-offset: 4px;
   text-decoration-thickness: 1px;
@@ -234,7 +236,7 @@ address {
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 150px;
+  margin-top: 149px;
   margin-bottom: 70px;
 }
 
