@@ -58,6 +58,7 @@ address {
 .color-overlay {
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
+  top: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -75,7 +76,7 @@ address {
 .aligned-text_center {
   display: block;
   text-align: center;
-  margin-left: -64px;
+  margin-right: 60px;
 }
 
 .aligned-text_right {
@@ -98,12 +99,13 @@ address {
   color: white;
   font-size: 22px;
   text-transform: uppercase;
-  margin-top: 95px;
+  margin-top: 81px;
   margin-left: 5px;
 }
 
 .cover__description .cover__description-text {
   word-spacing: 19px;
+  margin-top: 14px;
   margin-left: 35px;
   margin-right: 0;
   color: white;
@@ -111,7 +113,6 @@ address {
 
 .bet-button {
   margin-right: 12px;
-  margin-top: -13px;
   background: transparent;
   border: 1px solid currentColor;
   font-size: 22px;
@@ -134,7 +135,6 @@ address {
   margin: 0 25px 0 25px;
   gap: 25px;
   list-style-type: none;
-  min-height: 563px;
 }
 
 .card-link {
